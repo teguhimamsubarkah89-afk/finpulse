@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>FinPulse - Profile</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#dae2fd",
+                        "on-surface-variant": "#cbc3d7",
+                        "secondary": "#4edea3",
+                        "on-tertiary-container": "#4e3e00",
+                        "on-primary-fixed": "#23005c",
+                        "surface-tint": "#d0bcff",
+                        "tertiary": "#eec200",
+                        "outline": "#958ea0",
+                        "primary-fixed-dim": "#d0bcff",
+                        "on-error-container": "#ffdad6",
+                        "on-primary": "#3c0091",
+                        "on-background": "#dae2fd",
+                        "tertiary-container": "#cea700",
+                        "on-secondary-container": "#00311f",
+                        "on-secondary-fixed-variant": "#005236",
+                        "outline-variant": "#494454",
+                        "primary": "#d0bcff",
+                        "on-tertiary": "#3c2f00",
+                        "surface-container": "#171f33",
+                        "inverse-surface": "#dae2fd",
+                        "on-primary-container": "#340080",
+                        "tertiary-fixed-dim": "#eec200",
+                        "on-secondary": "#003824",
+                        "surface-container-lowest": "#060e20",
+                        "on-primary-fixed-variant": "#5516be",
+                        "secondary-container": "#00a572",
+                        "surface-container-highest": "#2d3449",
+                        "surface-container-high": "#222a3d",
+                        "inverse-on-surface": "#283044",
+                        "error": "#ffb4ab",
+                        "on-tertiary-fixed": "#231b00",
+                        "tertiary-fixed": "#ffe083",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "primary-fixed": "#e9ddff",
+                        "secondary-fixed-dim": "#4edea3",
+                        "primary-container": "#a078ff",
+                        "surface-container-low": "#131b2e",
+                        "error-container": "#93000a",
+                        "surface-bright": "#31394d",
+                        "background": "#0b1326",
+                        "on-error": "#690005",
+                        "surface-dim": "#0b1326",
+                        "secondary-fixed": "#6ffbbe",
+                        "surface": "#0b1326",
+                        "surface-variant": "#2d3449",
+                        "inverse-primary": "#6d3bd7",
+                        "on-secondary-fixed": "#002113"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-margin": "24px",
+                        "base": "8px",
+                        "section-gap": "40px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "display-lg-mobile": ["Inter"],
+                        "watermark": ["Inter"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "42px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "watermark": ["10px", { "lineHeight": "14px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body-lg min-h-screen flex flex-col pb-24 md:pb-0">
+    <!-- TopAppBar -->
+    <header
+        class="flex justify-between items-center w-full px-container-margin py-4 bg-background z-10 sticky top-0 md:hidden">
+        <h1 class="font-display-lg-mobile text-display-lg-mobile text-primary tracking-tighter">FinPulse</h1>
+        <div class="flex gap-4">
+            <button
+                class="text-on-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 p-2 rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+            </button>
+        </div>
+    </header>
+    <header
+        class="hidden md:flex justify-between items-center w-full px-container-margin py-4 bg-background z-10 sticky top-0 max-w-[1200px] mx-auto">
+        <h1 class="font-display-lg text-display-lg text-primary tracking-tighter">FinPulse</h1>
+        <nav class="flex gap-8">
+            <a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2 p-2 rounded-lg hover:bg-surface-container-high active:scale-95"
+                href="#">Home</a>
+            <a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2 p-2 rounded-lg hover:bg-surface-container-high active:scale-95"
+                href="#">History</a>
+            <a class="font-body-lg text-body-lg text-on-surface-variant hover:text-primary transition-colors flex items-center gap-2 p-2 rounded-lg hover:bg-surface-container-high active:scale-95"
+                href="#">Reports</a>
+            <a class="font-body-lg text-body-lg text-on-background font-bold flex items-center gap-2 p-2 rounded-lg hover:bg-surface-container-high active:scale-95"
+                href="#">Settings</a>
+        </nav>
+        <div class="flex gap-4">
+            <button
+                class="text-on-surface-variant hover:bg-surface-container-high transition-colors active:scale-95 p-2 rounded-full flex items-center justify-center">
+                <span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+            </button>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow px-container-margin py-section-gap max-w-[1200px] mx-auto w-full">
+        <!-- Profile Header -->
+        <section class="flex flex-col items-center justify-center text-center mb-section-gap relative">
+            <div
+                class="w-32 h-32 rounded-full overflow-hidden mb-6 border-4 border-primary relative shadow-lg shadow-primary/20">
+                <img class="w-full h-full object-cover"
+                    data-alt="A striking portrait of a confident young professional in a modern, high-contrast neon-lit urban environment. The lighting is cinematic, casting vibrant purple and soft mint green highlights across their face, embodying a dynamic, Gen Z financial empowerment aesthetic. The background is slightly blurred with abstract tech-inspired light streaks."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_h_x9_J60OZpGA1089WIHbczWBsFGM7dJeZSwiL9c3VKaxOkcd7M2_8rZyzBMS5kKWwcAtuSvtCyhPze-v0JCu-6yHk7nNIlIY9fAO3vGkMwHKn29VktIMadKsbeBNFv67ltTk7ssdcuWB7sE0cN7IJjHGsCjGwXaT9kfeAqC5UM_Lne3vulgPq1LhTg3BPSRzG3mpM3wIDCIHubI2QK1Gi19n2vE9nFxj9aLm6M8xHIE0cSNDecQLA" />
+            </div>
+            <h2 class="font-headline-md text-headline-md text-on-background mb-2">Alex Mercer</h2>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mb-6">alex.mercer@finpulse.app</p>
+            <button
+                class="bg-gradient-to-r from-primary to-primary-container text-on-primary font-body-lg text-body-lg px-8 py-3 rounded-lg font-bold hover:opacity-90 transition-opacity active:scale-[0.98] flex items-center gap-2">
+                <span class="material-symbols-outlined" data-icon="edit">edit</span>
+                Edit Profile
+            </button>
+        </section>
+        <!-- Activity Summary Bento Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-section-gap">
+            <!-- Total Tracked Card -->
+            <div
+                class="bg-surface-container rounded-xl p-6 relative overflow-hidden flex flex-col justify-between min-h-[160px]">
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none"></div>
+                <div>
+                    <h3 class="font-label-caps text-label-caps text-outline uppercase mb-2">Total Tracked</h3>
+                    <div
+                        class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background">
+                        $14,250<span class="text-primary">.00</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-4 text-secondary">
+                    <span class="material-symbols-outlined text-sm" data-icon="trending_up">trending_up</span>
+                    <span class="font-body-sm text-body-sm">+12% this month</span>
+                </div>
+            </div>
+            <!-- Active Goals Card -->
+            <div
+                class="bg-surface-container rounded-xl p-6 relative overflow-hidden flex flex-col justify-between min-h-[160px]">
+                <div class="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent pointer-events-none">
+                </div>
+                <div>
+                    <h3 class="font-label-caps text-label-caps text-outline uppercase mb-2">Active Goals</h3>
+                    <div
+                        class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-background">
+                        3 <span class="font-headline-md text-headline-md text-on-surface-variant">/ 5</span>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <div class="w-full bg-surface-container-highest rounded-full h-2">
+                        <div class="bg-secondary h-2 rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Additional Settings / Links -->
+        <section class="flex flex-col gap-4">
+            <a class="bg-surface-container hover:bg-surface-container-high transition-colors p-4 rounded-xl flex items-center justify-between group"
+                href="#">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        <span class="material-symbols-outlined" data-icon="security">security</span>
+                    </div>
+                    <span class="font-body-lg text-body-lg text-on-background">Security & Privacy</span>
+                </div>
+                <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                    data-icon="chevron_right">chevron_right</span>
+            </a>
+            <a class="bg-surface-container hover:bg-surface-container-high transition-colors p-4 rounded-xl flex items-center justify-between group"
+                href="#">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        <span class="material-symbols-outlined" data-icon="credit_card">credit_card</span>
+                    </div>
+                    <span class="font-body-lg text-body-lg text-on-background">Linked Accounts</span>
+                </div>
+                <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors"
+                    data-icon="chevron_right">chevron_right</span>
+            </a>
+            <button
+                class="bg-surface-container hover:bg-error-container/20 transition-colors p-4 rounded-xl flex items-center justify-between group mt-4 border border-transparent hover:border-error/30">
+                <div class="flex items-center gap-4">
+                    <div
+                        class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-error">
+                        <span class="material-symbols-outlined" data-icon="logout">logout</span>
+                    </div>
+                    <span class="font-body-lg text-body-lg text-error">Log Out</span>
+                </div>
+            </button>
+        </section>
+    </main>
+    <!-- BottomNavBar -->
+    <nav
+        class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-6 pt-2 bg-surface-container/80 backdrop-blur-xl border-t border-outline-variant/10 shadow-2xl z-50 rounded-t-xl">
+        <a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-all active:scale-90 duration-200"
+            href="#">
+            <span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+            <span class="font-label-caps text-label-caps">Home</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-all active:scale-90 duration-200"
+            href="#">
+            <span class="material-symbols-outlined mb-1" data-icon="receipt_long">receipt_long</span>
+            <span class="font-label-caps text-label-caps">History</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-all active:scale-90 duration-200"
+            href="#">
+            <span class="material-symbols-outlined mb-1" data-icon="add">add</span>
+            <span class="font-label-caps text-label-caps">Add</span>
+        </a>
+        <a class="flex flex-col items-center justify-center text-on-surface-variant p-2 hover:text-primary transition-all active:scale-90 duration-200"
+            href="#">
+            <span class="material-symbols-outlined mb-1" data-icon="leaderboard">leaderboard</span>
+            <span class="font-label-caps text-label-caps">Reports</span>
+        </a>
+        <a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full p-2 scale-110 -translate-y-2 border-2 border-secondary hover:text-primary transition-all active:scale-90 duration-200"
+            href="#">
+            <span class="material-symbols-outlined mb-1" data-icon="settings">settings</span>
+            <span class="font-label-caps text-label-caps">Settings</span>
+        </a>
+    </nav>
+    <!-- Footer -->
+    <footer class="w-full flex justify-center items-center py-8 opacity-50 bg-transparent mb-16 md:mb-0">
+        <p class="font-watermark text-watermark text-outline">Didesain oleh Teguh Imam Subarkah</p>
+    </footer>
+</body>
+
+</html>
